@@ -1,4 +1,4 @@
-FR0M ruby:3.2.2
+FR0M ruby:2.6.10
 Run apt-get update -qq && apt-get install -y \
 build-essential \
 libpq-dev \
