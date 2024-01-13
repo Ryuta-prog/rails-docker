@@ -1,4 +1,5 @@
-version:'3'
+networks: 
+    myapp-network:   
 
 volumes:
     db-data:
