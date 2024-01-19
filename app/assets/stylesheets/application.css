@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+ <!-- app/views/pages/home.html.erb -->
+
+ <div class="rails-illustration">
+   <%= image_tag('welcome_to_rails.png', alt: 'Welcome to Rails') %>
+   <h1>Welcome to My Rails App!</h1>
+   <!-- 他のコンテンツを追加 -->
+ </div>
+ 
