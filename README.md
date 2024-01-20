@@ -7,50 +7,9 @@ https://github.com/ihatov08/rails7_docker_template
 緑色のボタンUse this templateをクリックし、Create a new repositoryを選択
 任意のリポジトリ名を入力する(ここではrails-docker)
 2. 設置したリポジトリをローカルにクローン
-git clone https://github.com/yokoyamamn/rails-docker.git
+git clone https://github.com/Ryuta-prog/rails-docker
 条件
 DBはpostgresのversion12を使用
 ホストのファイルシステムとコンテナのファイルシステムを同期させる
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+docker-compose upでrailsプロセスとdbが起動し、http://localhost:3000 でアクセスできるようにする
+docker-compose.ymlファイルの18行目 bash -c "rm -f tmp/pids/server.pid && rails db:create && rails db:migrate && rails s -b 0.0.0.0" において && rails db:create は初回のみ実行し、2回目以降は削除する
