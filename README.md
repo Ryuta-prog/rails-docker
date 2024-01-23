@@ -10,3 +10,5 @@ git clone https://github.com/Ryuta-prog/rails-docker<br>
 3. DBはpostgresのversion12を使用
 ホストのファイルシステムとコンテナのファイルシステムを同期させる<br>
 4. docker-compose upでrailsプロセスとdbが起動し、http://localhost:3000 でアクセスできるようにする
+5.  ただし、初めてアプリケーションを起動する前には、以下のコマンドを実行してデータベースを作成すること<br>
+docker-compose run web rails db:create
