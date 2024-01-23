@@ -9,4 +9,4 @@ https://github.com/ihatov08/rails7_docker_template
 git clone https://github.com/Ryuta-prog/rails-docker<br>
 3. DBはpostgresのversion12を使用
 ホストのファイルシステムとコンテナのファイルシステムを同期させる<br>
-4. docker-compose upでrailsプロセスとdbが起動し、http://localhost:3000 でアクセスできるようにする<br>
+4. docker-compose upでrailsプロセスとdbが起動し、http://localhost:3000 でアクセスできるようにする
