@@ -34,5 +34,3 @@ test:
 production:
   <<: *default
   database: rails-docker_production
-
-
