@@ -15,7 +15,7 @@ services:
   web:
     build: .
     command: >
-      bash -c "if [ ! -f tmp/initial_db_setup_done ]; then rails db:migrate && touch tmp/initial_db_setup_done; fi && rm -f tmp/pids/server.pid && rails s -b 0.0.0.0"
+      bash -c "rails db:migrate && rm -f tmp/pids/server.pid && rails s -b 0.0.0.0"
     ports:
       - '3000:3000'
     volumes:
